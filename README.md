@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Next.js + MongoDB (Mongoose) + Clerk Starter
 
-## Getting Started
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![Next.js](https://img.shields.io/badge/Next.js-15-blue?logo=next.js)](https://nextjs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Mongoose-green?logo=mongodb)](https://mongoosejs.com/)
+[![Clerk Auth](https://img.shields.io/badge/Auth-Clerk-red?logo=clerk)](https://clerk.com/)
 
-First, run the development server:
+---
+
+<p align="center">
+  <img src="docs/screenshot-placeholder.png" alt="Project Screenshot" width="600"/>
+</p>
+
+---
+
+## ✨ Why This Starter?
+- **Zero config:** Auth & DB are ready—just add your `.env.local` and go.
+- **Modern stack:** Next.js (App Router, TypeScript), MongoDB (Mongoose), Clerk authentication.
+- **Extensible:** Add your own models, routes, and UI frameworks.
+- **AI/Onboarding ready:** Docs and memory bank for AI assistants and fast team onboarding.
+- **Open-source:** Clean, minimal, and community-driven.
+
+---
+
+## 🏁 First Steps (Checklist)
+- [ ] Clone the repo
+- [ ] Install dependencies
+- [ ] Copy `.env.example` to `.env.local` and fill in your credentials
+- [ ] Run `npm run dev` and visit [http://localhost:3000](http://localhost:3000)
+- [ ] Try the example API: `GET /api/example-items`
+- [ ] Start building your app!
+
+---
+
+## ⚡ Quick Start
 
 ```bash
+git clone https://github.com/romiluz13/next_mongo_clerk.git
+cd next_mongo_clerk
+npm install
+cp .env.example .env.local # then edit with your secrets
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
+- [Next.js](https://nextjs.org/) (latest, App Router, TypeScript)
+- [MongoDB](https://www.mongodb.com/) (with [Mongoose](https://mongoosejs.com/))
+- [Clerk](https://clerk.com/) authentication
+- [ESLint](https://eslint.org/) for code quality
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📚 Documentation & AI Assistance
+- [`docs/`](./docs/) — MongoDB, Clerk, and AI-assist guides
+- [`memory-bank/`](./memory-bank/) — Project context, patterns, and architecture
+- Example model: [`src/models/ExampleItem.ts`](./src/models/ExampleItem.ts)
+- Example API: [`src/app/api/example-items/route.ts`](./src/app/api/example-items/route.ts)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧩 Extending This Starter
+- Add your own Mongoose models in `src/models/`
+- Create new API routes in `src/app/api/`
+- Customize the UI and add your favorite frameworks
+- Update docs as your project evolves
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🤝 Contributing
+Contributions are welcome! Open issues, submit pull requests, or suggest improvements.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+[MIT](./LICENSE)
+
+---
+
+> Made with ❤️ for the open-source community. Happy hacking!
