@@ -78,4 +78,15 @@ Contributions are welcome! Open issues, submit pull requests, or suggest improve
 
 ---
 
+## 🧹 How to Remove Example Code
+If you want a completely clean slate, just delete these files:
+- `src/models/ExampleItem.ts`
+- `src/app/api/example-items/route.ts`
+- `src/app/dashboard/page.tsx`
+- `src/app/page.tsx` (home page example)
+
+That's it! Your project will be a blank Next.js + MongoDB + Clerk starter, ready for anything.
+
+---
+
 > Made with ❤️ for the open-source community. Happy hacking!

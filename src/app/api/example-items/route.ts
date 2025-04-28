@@ -7,11 +7,19 @@ import dbConnect from '@/lib/mongoose';
 import ExampleItem from '@/models/ExampleItem';
 import { NextResponse } from 'next/server';
 
+type ExampleItemType = {
+  name: string;
+  description?: string;
+  _id?: string;
+  createdAt?: string;
+  updatedAt?: string;
+};
+
 // GET: List all items
-export async function GET() {
+export async function GET(): Promise<Response> {
   try {
     await dbConnect();
-    const items = await ExampleItem.find();
+    const items: ExampleItemType[] = await ExampleItem.find();
     return NextResponse.json(items);
   } catch (error) {
     // If model is missing or deleted, return empty array (non-blocking)
@@ -20,11 +28,11 @@ export async function GET() {
 }
 
 // POST: Create a new item
-export async function POST(req: Request) {
+export async function POST(req: Request): Promise<Response> {
   try {
     await dbConnect();
-    const body = await req.json();
-    const item = await ExampleItem.create(body);
+    const body: ExampleItemType = await req.json();
+    const item: ExampleItemType = await ExampleItem.create(body);
     return NextResponse.json(item, { status: 201 });
   } catch (error) {
     // If model is missing or deleted, return error but do not block app
