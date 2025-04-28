@@ -12,7 +12,7 @@ function MongoStatus() {
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#22c55e', fontWeight: 600 }}>
       <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><circle cx="10" cy="10" r="10" /></svg>
-      Effortless MongoDB Integration
+      Connected to MongoDB.
     </div>
   );
 }
