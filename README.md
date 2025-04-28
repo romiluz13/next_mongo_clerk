@@ -89,4 +89,4 @@ That's it! Your project will be a blank Next.js + MongoDB + Clerk starter, ready
 
 ---
 
-> Made with ❤️ for the open-source community. Happy hacking!
+> Made with ❤️ By Rom Iluz for the open-source community. Happy hacking!
