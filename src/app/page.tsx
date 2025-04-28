@@ -40,7 +40,6 @@ export default function Home() {
         <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, marginTop: 24 }}>
           <MongoStatus />
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16, justifyContent: 'center', marginTop: 8 }}>
-            <Link href="/dashboard" style={buttonStyleBlue}>Go to Dashboard</Link>
             <a href="https://github.com/romiluz13/next_mongo_clerk" target="_blank" rel="noopener noreferrer" style={buttonStyleBlack}>GitHub Repo</a>
           </div>
         </div>
@@ -64,14 +63,14 @@ const badgeStyle = {
   gap: 4,
 };
 
-const buttonStyleBlue = {
+const buttonStyleBlack = { 
   padding: '12px 28px',
   borderRadius: 12,
-  background: '#3b82f6',
+  background: 'rgba(0,0,0,0.7)',
   color: 'white',
   fontWeight: 600,
   boxShadow: '0 2px 8px #0004',
   textDecoration: 'none',
+  border: '1px solid #334155',
   transition: 'background 0.2s',
 };
-const buttonStyleBlack = { ...buttonStyleBlue, background: 'rgba(0,0,0,0.7)', border: '1px solid #334155' };
