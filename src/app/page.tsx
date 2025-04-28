@@ -5,6 +5,7 @@
  * Credits: Rom Iluz
  */
 import Link from 'next/link';
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs';
 
 function MongoStatus() {
   // Simulate a connected status for demo (replace with real check if needed)
@@ -47,6 +48,16 @@ export default function Home() {
           <svg width="80" height="80" viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="38" fill="#1e293b" stroke="#6366f1" strokeWidth="4" /><ellipse cx="40" cy="55" rx="18" ry="6" fill="#6366f1" opacity="0.2" /><circle cx="40" cy="32" r="16" fill="#6366f1" opacity="0.7" /><circle cx="40" cy="32" r="8" fill="#a5b4fc" opacity="0.8" /></svg>
           <span style={{ fontSize: 12, color: '#94a3b8', marginTop: 8 }}>Made with <span style={{ color: '#f472b6' }}>❤️</span> by <span style={{ fontWeight: 700 }}>Rom Iluz</span></span>
         </div>
+        <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginBottom: 24 }}>
+          <SignedOut>
+            <SignInButton>
+              <button style={loginButtonStyle}>Log In</button>
+            </SignInButton>
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
+        </div>
       </div>
     </main>
   );
@@ -73,4 +84,21 @@ const buttonStyleBlack = {
   textDecoration: 'none',
   border: '1px solid #334155',
   transition: 'background 0.2s',
+};
+
+const loginButtonStyle = {
+  padding: '16px 48px',
+  borderRadius: 16,
+  background: 'linear-gradient(90deg, #6366f1 0%, #34d399 100%)',
+  color: 'white',
+  fontWeight: 800,
+  fontSize: 20,
+  boxShadow: '0 4px 32px #6366f155',
+  border: 'none',
+  outline: 'none',
+  cursor: 'pointer',
+  transition: 'transform 0.1s, box-shadow 0.1s',
+  margin: '0 auto',
+  letterSpacing: 1,
+  textShadow: '0 2px 8px #0006',
 };
