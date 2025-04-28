@@ -25,9 +25,8 @@
 ## 🏁 First Steps (Checklist)
 - [ ] Clone the repo
 - [ ] Install dependencies
-- [ ] Copy `.env.example` to `.env.local` and fill in your credentials
+- [ ] fill in your credentials in .env.local`  
 - [ ] Run `npm run dev` and visit [http://localhost:3000](http://localhost:3000)
-- [ ] Try the example API: `GET /api/example-items`
 - [ ] Start building your app!
 
 ---
