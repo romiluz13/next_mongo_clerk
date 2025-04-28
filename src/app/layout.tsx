@@ -9,6 +9,7 @@ import {
 } from "@clerk/nextjs";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ErrorBoundaryWrapper from './ErrorBoundaryWrapper';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -60,20 +61,4 @@ export default function RootLayout({
       </html>
     </ClerkProvider>
   );
-}
-
-// Minimal error boundary wrapper for React (client component)
-'use client';
-import { useEffect, useState } from 'react';
-function ErrorBoundaryWrapper({ children }: { children: React.ReactNode }) {
-  const [error, setError] = useState<Error | null>(null);
-  useEffect(() => {
-    const handleError = (event: ErrorEvent) => {
-      setError(event.error || new Error('Unknown error'));
-    };
-    window.addEventListener('error', handleError);
-    return () => window.removeEventListener('error', handleError);
-  }, []);
-  if (error) return <ErrorBoundary error={error} />;
-  return <>{children}</>;
 }

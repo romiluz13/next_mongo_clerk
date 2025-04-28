@@ -84,6 +84,7 @@ If you want a completely clean slate, just delete these files:
 - `src/app/api/example-items/route.ts`
 - `src/app/dashboard/page.tsx`
 - `src/app/page.tsx` (home page example)
+- `src/app/ErrorBoundaryWrapper.tsx` (minimal error boundary, safe to delete)
 
 That's it! Your project will be a blank Next.js + MongoDB + Clerk starter, ready for anything.
 
