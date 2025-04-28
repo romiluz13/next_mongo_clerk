@@ -1,5 +1,7 @@
 # Active Context
 
+> Tracks current state, recent changes, and next steps for open-source and AI onboarding.
+
 ## Current Work Focus
 - Provide a ready-to-use, open-source starter for Next.js, Mongoose, and Clerk
 - Maintain clear documentation and onboarding context

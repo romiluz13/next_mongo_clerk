@@ -1,5 +1,7 @@
 # Progress
 
+> Summarizes what works, what's left, and current status for open-source and AI onboarding.
+
 ## What Works
 - Next.js app bootstrapped with TypeScript and app directory
 - Mongoose and Clerk packages installed

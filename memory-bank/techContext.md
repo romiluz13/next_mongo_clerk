@@ -1,5 +1,7 @@
 # Tech Context
 
+> Describes the tech stack, setup, and constraints for open-source and AI onboarding.
+
 ## Technologies Used
 - Next.js (latest, App Router, TypeScript)
 - MongoDB (via Mongoose)

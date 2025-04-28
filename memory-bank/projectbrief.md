@@ -1,5 +1,7 @@
 # Project Brief
 
+> Defines the core goals and scope of this starter template for open-source and AI onboarding.
+
 ## Project Name
 Next.js + MongoDB (Mongoose) + Clerk Starter Template
 

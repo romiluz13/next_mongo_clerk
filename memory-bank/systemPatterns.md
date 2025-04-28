@@ -1,5 +1,7 @@
 # System Patterns
 
+> Documents architecture, design patterns, and key decisions for open-source and AI onboarding.
+
 ## Architecture
 - Next.js (App Router, TypeScript, src/ directory)
 - MongoDB via Mongoose (singleton connection pattern)

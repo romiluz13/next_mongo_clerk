@@ -1,5 +1,7 @@
 # Product Context
 
+> Explains the "why" behind this starter, for open-source users and AI onboarding.
+
 ## Why This Project Exists
 Developers often spend time setting up the same boilerplate for every new Next.js project with MongoDB and authentication. This open-source starter eliminates repetitive setup, enabling anyone to start building instantly.
 
