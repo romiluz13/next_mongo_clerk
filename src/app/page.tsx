@@ -12,7 +12,7 @@ function MongoStatus() {
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#22c55e', fontWeight: 600 }}>
       <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><circle cx="10" cy="10" r="10" /></svg>
-      MongoDB Connected
+      Effortless MongoDB Integration
     </div>
   );
 }
@@ -20,23 +20,26 @@ function MongoStatus() {
 export default function Home() {
   return (
     <main style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg, #0f172a 0%, #18181b 100%)', color: 'white', padding: 32 }}>
-      <div style={{ maxWidth: 480, width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 32, padding: '64px 0' }}>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
-          <h1 style={{ fontSize: 40, fontWeight: 800, background: 'linear-gradient(90deg, #60a5fa, #34d399, #a78bfa)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textAlign: 'center', textShadow: '0 2px 16px #0008' }}>
-            Next.js + MongoDB + Clerk Starter
+      <div style={{ maxWidth: 700, width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 48, padding: '80px 0' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>
+          <h1 style={{ fontSize: 56, fontWeight: 900, background: 'linear-gradient(90deg, #60a5fa, #34d399, #a78bfa)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textAlign: 'center', textShadow: '0 4px 32px #0008', letterSpacing: -2, lineHeight: 1.1, marginBottom: 0 }}>
+            Next.js + MongoDB + Clerk
           </h1>
-          <p style={{ fontSize: 18, color: '#cbd5e1', textAlign: 'center', marginTop: 8 }}>
+          <h2 style={{ fontSize: 40, fontWeight: 800, color: '#a5b4fc', textAlign: 'center', marginTop: 0, marginBottom: 8, letterSpacing: -1, lineHeight: 1.1 }}>
+            Future-Proof Starter Template
+          </h2>
+          <p style={{ fontSize: 24, color: '#cbd5e1', textAlign: 'center', marginTop: 12 }}>
             The ultimate launchpad for any modern web app.<br />
-            <span style={{ fontWeight: 600 }}>Zero config. Extensible. AI-ready.</span>
+            <span style={{ fontWeight: 700 }}>Zero config. Extensible. AI-ready.</span>
           </p>
         </div>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, justifyContent: 'center', marginTop: 8 }}>
-          <span style={badgeStyle}>🚀 Next.js 15</span>
-          <span style={badgeStyle}>🍃 MongoDB (Mongoose)</span>
-          <span style={badgeStyle}>🔐 Clerk Auth</span>
-          <span style={badgeStyle}>🧪 Vitest</span>
-          <span style={badgeStyle}>🎨 Prettier</span>
-          <span style={badgeStyle}>🤖 AI/Memory Bank</span>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 20, justifyContent: 'center', marginTop: 12 }}>
+          <span style={badgeStyleLarge}>🚀 Next.js 15</span>
+          <span style={badgeStyleLarge}>🍃 MongoDB</span>
+          <span style={badgeStyleLarge}>🔐 Clerk Auth</span>
+          <span style={badgeStyleLarge}>🧪 Vitest</span>
+          <span style={badgeStyleLarge}>🎨 Prettier</span>
+          <span style={badgeStyleLarge}>🤖 AI/Memory Bank</span>
         </div>
         <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, marginTop: 24 }}>
           <MongoStatus />
@@ -63,15 +66,16 @@ export default function Home() {
   );
 }
 
-const badgeStyle = {
-  padding: '6px 14px',
+const badgeStyleLarge = {
+  padding: '10px 22px',
   borderRadius: 999,
-  background: 'rgba(30,41,59,0.8)',
-  border: '1px solid #334155',
-  fontSize: 14,
+  background: 'rgba(30,41,59,0.85)',
+  border: '1.5px solid #334155',
+  fontSize: 20,
   display: 'flex',
   alignItems: 'center',
-  gap: 4,
+  gap: 8,
+  fontWeight: 600,
 };
 
 const buttonStyleBlack = { 
