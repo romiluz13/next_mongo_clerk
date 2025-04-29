@@ -20,4 +20,9 @@ Developers often spend time setting up the same boilerplate for every new Next.j
 - Zero-configuration start (after .env)
 - Clean, understandable codebase
 - Fast onboarding for any developer or team
-- AI-friendly documentation structure 
+- AI-friendly documentation structure
+
+## User Experience Goal
+- Instantly modern and "vibe coder" friendly, but never cluttered.
+- Users should recognize shadcn's clean, minimal design language, but the app should still feel unique to the brand.
+- The app should feel future-proof, easy to extend, and ready for rapid prototyping or production. 

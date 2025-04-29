@@ -23,7 +23,7 @@ export default function Home() {
       <div style={{ maxWidth: 700, width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 48, padding: '80px 0' }}>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>
           <h1 style={{ fontSize: 56, fontWeight: 900, background: 'linear-gradient(90deg, #60a5fa, #34d399, #a78bfa)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textAlign: 'center', textShadow: '0 4px 32px #0008', letterSpacing: -2, lineHeight: 1.1, marginBottom: 0 }}>
-            Next.js + MongoDB + Clerk
+            Next.js + MongoDB + Clerk + shadcn/ui
           </h1>
           <h2 style={{ fontSize: 40, fontWeight: 800, color: '#a5b4fc', textAlign: 'center', marginTop: 0, marginBottom: 8, letterSpacing: -1, lineHeight: 1.1 }}>
             Future-Proof Starter Template
@@ -40,6 +40,7 @@ export default function Home() {
           <span style={badgeStyleLarge}>🧪 Vitest</span>
           <span style={badgeStyleLarge}>🎨 Prettier</span>
           <span style={badgeStyleLarge}>🤖 AI/Memory Bank</span>
+          <span style={badgeStyleLarge}>✨ shadcn/ui <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style={{ marginLeft: 6, verticalAlign: 'middle' }}><rect width="24" height="24" rx="6" fill="#18181b"/><path d="M7 17V7h2.5c2.5 0 4.5 2 4.5 4.5S12 16 9.5 16H7zm2-2h.5a2.5 2.5 0 100-5H9v5z" fill="#fff"/></svg></span>
         </div>
         <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, marginTop: 24 }}>
           <MongoStatus />

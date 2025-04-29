@@ -89,4 +89,25 @@ That's it! Your project will be a blank Next.js + MongoDB + Clerk starter, ready
 
 ---
 
+## Features
+- Next.js 15 (App Router)
+- MongoDB (Mongoose)
+- Clerk (Auth)
+- Tailwind CSS v4 (utility-first, fully configured)
+- shadcn/ui (modern component library, minimal custom CSS)
+- All configs (Tailwind, PostCSS) are set up for out-of-the-box use
+
+## Quick Start
+1. Clone the repo
+2. Run `npm install`
+3. Add your `.env.local` with MongoDB and Clerk keys
+4. Run `npm run dev`
+
+## Notes
+- **Tailwind v4+**: The new PostCSS plugin (`@tailwindcss/postcss`) is already installed and configured. No extra setup needed for future users.
+- **shadcn/ui**: Ready to use for beautiful, modern UI components. Add new components with `npx shadcn@latest add <component>`.
+- Minimal, clean, and future-proof—just clone and build!
+
+---
+
 > Made with ❤️ By Rom Iluz for the open-source community. Happy hacking!

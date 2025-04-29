@@ -25,4 +25,12 @@
 
 ## Extensibility
 - This template is designed to be extended for any Next.js + MongoDB + Clerk project
-- Add your own models, routes, and UI as needed 
+- Add your own models, routes, and UI as needed
+
+## UI Design Pattern
+- Use shadcn/ui components and Tailwind CSS utility classes for all new UI.
+- Build UI as isolated, reusable components in `src/components/ui`.
+- Minimal custom CSS—prefer Tailwind utilities and shadcn design tokens.
+- Theme consistency: use shadcn color tokens and variables for light/dark mode and brand.
+- Minimal change principle: only refactor existing UI to shadcn when already modifying that part.
+- Gradual, thoughtful adoption for a clean, future-proof codebase. 

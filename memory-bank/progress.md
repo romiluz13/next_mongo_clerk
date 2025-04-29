@@ -9,6 +9,8 @@
 - Initial documentation in memory bank and docs
 - Minimal home page, dashboard, example model, and API (all safe to delete)
 - TypeScript types in example API (non-blocking)
+- shadcn/ui and Tailwind CSS are fully set up and ready for use.
+- The project remains minimal, clean, and easy to clone.
 
 ## What's Left to Build
 - Add minimal test setup for demonstration (safe to delete)
@@ -20,4 +22,8 @@
 - All examples are opt-in and do not block any use case
 
 ## Known Issues
-- None (template is ready for use) 
+- None (template is ready for use)
+
+## What's next
+- Gradually introduce shadcn components for new features or when refactoring old UI.
+- Keep the design minimal—use shadcn's defaults, only customizing for standout features. 
