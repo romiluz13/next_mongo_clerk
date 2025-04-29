@@ -37,7 +37,7 @@
 git clone https://github.com/romiluz13/next_mongo_clerk.git
 cd next_mongo_clerk
 npm install
-cp .env.example .env.local # then edit with your secrets
+# then edit with your secrets in .env.local
 npm run dev
 ```
 
